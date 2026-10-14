@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y0N3T3 | League of Legends</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main id="login-screen" class="login-screen">
+    <section class="login-card">
+      <div class="crest">Y</div>
+      <p class="eyebrow">SUMMONER ACCESS</p>
+      <h1>Y0N3T3</h1>
+      <p class="subtitle">Intrare in Rift</p>
+      <form id="login-form">
+        <label for="username">Login</label>
+        <input id="username" name="username" type="text" autocomplete="username" placeholder="Introdu loginul" required>
+        <label for="password">Parola</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Introdu parola" required>
+        <p id="login-error" class="error" aria-live="polite"></p>
+        <button class="primary-button" type="submit">INTRA IN JOC</button>
+      </form>
+      <p class="fine-print">Unelte pentru organizarea campionilor</p>
+    </section>
+  </main>
+
+  <main id="app-screen" class="app-screen hidden">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">Y</span><div><strong>Y0N3T3</strong><small>CHAMPION BOARD</small></div></div>
+      <div class="header-right"><span class="online-dot"></span><span>Summoner online</span><button id="logout-button" class="ghost-button">Deconectare</button></div>
+    </header>
+    <section class="hero">
+      <p class="eyebrow">LEAGUE OF LEGENDS • PERSONAL BOARD</p>
+      <h1>Alege-ti urmatoarea <em>provocare.</em></h1>
+      
+    </section>
+    <section class="category-grid">
+      <article class="category-panel" data-category="troll">
+        <div class="category-heading"><div><span class="tier">01 / CHAOS</span><h2>Campioni Troll</h2></div><span class="price">50 <small>lei</small></span></div>
+        <p class="category-description">Pentru alegeri imprevizibile si momente memorabile.</p>
+        <form class="champion-form">
+          <label>Numele campionului sau optiunea</label>
+          <div class="champion-autocomplete"><input class="champion-name" placeholder="Campion" autocomplete="off" required><div class="suggestions" role="listbox"></div></div>
+          <div class="form-row"><div><label>Tip de damage</label><select class="damage"><option value="AP">AP</option><option value="AD">AD</option></select></div><div><label>Numar de jocuri</label><div class="quantity"><button type="button" class="qty-minus" aria-label="Scade">−</button><output class="qty-value">1</output><button type="button" class="qty-plus" aria-label="Creste">+</button></div></div></div>
+          <button type="submit" class="add-button">+ ADAUGA CAMPION</button>
+        </form>
+        <div class="champion-list"></div>
+      </article>
+      <article class="category-panel" data-category="priority">
+        <div class="category-heading"><div><span class="tier">02 / PRIORITY</span><h2>Campioni Prioritati</h2></div><span class="price">25 <small>lei</small></span></div>
+        <p class="category-description">Campioni pe care vrei sa-i prioritizezi in urmatoarele jocuri.</p>
+        <form class="champion-form">
+          <label>Numele campionului sau optiunea</label>
+          <div class="champion-autocomplete"><input class="champion-name" placeholder="Campion" autocomplete="off" required><div class="suggestions" role="listbox"></div></div>
+          <div class="form-row"><div><label>Tip de damage</label><select class="damage"><option value="AP">AP</option><option value="AD">AD</option></select></div><div><label>Numar de jocuri</label><div class="quantity"><button type="button" class="qty-minus" aria-label="Scade">−</button><output class="qty-value">1</output><button type="button" class="qty-plus" aria-label="Creste">+</button></div></div></div>
+          <button type="submit" class="add-button">+ ADAUGA CAMPION</button>
+        </form>
+        <div class="champion-list"></div>
+      </article>
+      <article class="category-panel" data-category="simple">
+        <div class="category-heading"><div><span class="tier">03 / STANDARD</span><h2>Campion Simplu</h2></div><span class="price">10 <small>lei</small></span></div>
+        <p class="category-description">O alegere simpla, fara reguli suplimentare.</p>
+        <form class="champion-form">
+          <label>Numele campionului sau optiunea</label>
+          <div class="champion-autocomplete"><input class="champion-name" placeholder="Campion" autocomplete="off" required><div class="suggestions" role="listbox"></div></div>
+          <div class="form-row"><div><label>Tip de damage</label><select class="damage"><option value="AP">AP</option><option value="AD">AD</option></select></div><div><label>Numar de jocuri</label><div class="quantity"><button type="button" class="qty-minus" aria-label="Scade">−</button><output class="qty-value">1</output><button type="button" class="qty-plus" aria-label="Creste">+</button></div></div></div>
+          <button type="submit" class="add-button">+ ADAUGA CAMPION</button>
+        </form>
+        <div class="champion-list"></div>
+      </article>
+    </section>
+    
+    <footer>Y0N3T3 • Fan-made personal tool • Nu este afiliat cu Riot Games.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
